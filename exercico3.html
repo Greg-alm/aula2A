@@ -25,14 +25,14 @@ Chame o método na função e coloque o resultado na tela de forma organizada.
             }
         };
 
+         //Pegue o retorno do cálculo do objeto e exiba em 'txtIMC' usando .toFixed(1)
         function mostrarIMC(){
             let resultado = paciente.calcularImc()
-            document.getElementById("txtIMC").innerHTML = "resultado" + resultado + "IMC";
+            document.getElementById("txtIMC").innerHTML = "IMC: " + resultado.toFixed(1);
             
         }
        
-        //Pegue o retorno do cálculo do objeto e exiba em 'txtIMC' usando .toFixed(1)
-        
+       
     </script>
 </body>
 </html>
