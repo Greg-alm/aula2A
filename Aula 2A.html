@@ -20,18 +20,17 @@ que o botão for clicado. O valor atualizado é renderizado dinamicamente na tel
     <button onclick="clicouNoBotao()">Contar Clique</button>
 
     <script>
-    const contador = {
-        quantidade:0,
-        incrementar:function(){
-        this.quantidade++;
+        const contador = {
+            quantidade: 0,
+            incrementar: function() {
+                this.quantidade++; // Altera o valor interno
+            }
+        };
+
+        function clicouNoBotao() {
+            contador.incrementar();
+            document.getElementById("txtCliques").innerText = contador.quantidade;
         }
-
-
-    };
-    function clicouNoBotao(){
-        contador.incrementar();
-        document.getElementById("txtCliques").innerHTML = contador.quantidade;
-    } 
     </script>
 </body>
 </html>
